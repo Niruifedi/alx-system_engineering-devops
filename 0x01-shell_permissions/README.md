@@ -1,8 +1,0 @@
-The following scripts details how to run shell permissions
-using su to change user
-groups (username) to check current user groups
-whoami to know which user is logged in
-sudo chown to change ownerships
-touch to create a new file
-chmod to change diff permissions
-
