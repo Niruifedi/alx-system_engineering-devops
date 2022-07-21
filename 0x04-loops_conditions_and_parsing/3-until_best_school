@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This scripts prints out `Best School` with the until loop
+
+i=0
+until [ $i == 10 ];
+do
+	echo "Best School"
+	((i++))
+done
