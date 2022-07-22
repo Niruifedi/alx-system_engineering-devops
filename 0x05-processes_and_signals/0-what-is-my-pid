@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# script displays its own pid
+
+pid=/proc/sys/kernel/pid_max
+cat $pid
