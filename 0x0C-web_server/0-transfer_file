@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# script transfers a file from client to server
+# script acepts 4 arguments
+# the path to the file transferred
+# the op address of the server to transfer
+# the username
+# the path to ssh private key
+
+path=$1
+ip=$2
+uname=$3
+ps=$4
+if [[ $# -lt 4 ]];
+then
+echo 'Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY';
+else
+scp -o "StrictHostKeyChecking=no" -i "$ps" "$path" "$uname@$ip":~/;
+fi
