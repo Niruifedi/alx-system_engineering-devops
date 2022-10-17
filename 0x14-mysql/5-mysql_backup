@@ -2,5 +2,5 @@
 # Create a script to create a mysql db backup and convert to tar.gz format usin\
 
 mysqldump --all-databases -uroot -p'$1' > backup.sql
-tar.-cvzf "$(date +%m-%d-%Y).tar.gz" backup.sql
+tar -czf "$(date +%m-%d-%Y)".tar.gz backup.sql
 
